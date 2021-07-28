@@ -63,11 +63,11 @@ async def start(bot, cmd):
                         print(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"{files.file_name}"
+                    f_caption = f"@MM_MOVIESS {files.file_name}"
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
+                        InlineKeyboardButton('👩‍💻 Dev', url='https://t.me/iet_owner')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton("👩‍💻 Dev", url="https://t.me/iet_owner")
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about")
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('☘️ For Movies', url='https://t.me/mm_Moviess'),
+            InlineKeyboardButton('For Series 🍀', url='https://t.me/mm_seriess')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/iet_owner'>⸙Bᴏꜱꜱ Bᴀʙʏ᪣</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://telegra.ph/Source-code-07-27'>Click here 😜</a>\nUpdate Channel : <a href='https://t.me/mm_all_backup'>MM BACKUP</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
