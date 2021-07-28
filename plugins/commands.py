@@ -196,4 +196,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('For Series 🍀', url='https://t.me/mm_seriess')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/iet_owner'>⸙Bᴏꜱꜱ Bᴀʙʏ᪣</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://telegra.ph/Source-code-07-27'>Click here 😜</a>\nUpdate Channel : <a href='https://t.me/mm_all_backup'>MM BACKUP</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/iet_owner'>⸙Bᴏꜱꜱ Bᴀʙʏ᪣</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/IET_Owner/721'>Click here 😜</a>\nUpdate Channel : <a href='https://t.me/mm_all_backup'>MM BACKUP</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
