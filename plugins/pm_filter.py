@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('For Series 🍀', url='https://t.me/mm_seriess')
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/iet_owner'>⸙Bᴏꜱꜱ Bᴀʙʏ᪣</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://telegra.ph/Source-code-07-27'>Click here 😜</a>\nUpdated Channel : <a href='https://t.me/MM_ALL_BACKUP'>MM  BACKUP</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/iet_owner'>⸙Bᴏꜱꜱ Bᴀʙʏ᪣</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/IET_Owner/721'>Click here 😜</a>\nUpdated Channel : <a href='https://t.me/MM_ALL_BACKUP'>MM  BACKUP</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -326,7 +326,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/Iet_updates/142'),
+                        InlineKeyboardButton('🤖 More Bots', url='https://t.me/Iet_updates/142'),
                         InlineKeyboardButton('Update Channel', url='https://t.me/iet_updates')
                     ]
                     ]
