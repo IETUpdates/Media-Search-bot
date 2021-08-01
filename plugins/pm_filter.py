@@ -67,7 +67,7 @@ async def filter(client, message):
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
-            keyword = f"{message.chat.id}-{message.message_id}"
+            keyword = f"🍊 {message.chat.id}-{message.message_id}"
             BUTTONS[keyword] = {
                 "total" : len(btns),
                 "buttons" : btns
@@ -291,7 +291,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         print(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"{files.file_name}"
+                    f_caption = f"🔰 {files.file_name}"
                 buttons = [
                     [
                         InlineKeyboardButton('🦋 For Series', url='https://t.me/mm_seriess'),
@@ -323,7 +323,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         print(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"{title}"
+                    f_caption = f"🍎 {title}"
                 buttons = [
                     [
                         InlineKeyboardButton('🤖 More Bots', url='https://t.me/Iet_updates/142'),
@@ -343,4 +343,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("കൌതുകം ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
+        await query.answer("കൌതുകം ലേശം കൂടുതൽ ആണല്ലേ👀.ഇത് നിനക്ക് ഉള്ളത് അല്ല..😂",show_alert=True)
