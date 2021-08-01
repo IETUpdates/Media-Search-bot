@@ -103,7 +103,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("👩‍💻 Dev", url="https://t.me/iet_owner")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("✴️ About", callback_data="about")
                     ]
                 ]
             )
