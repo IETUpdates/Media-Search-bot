@@ -99,7 +99,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("♣️ Updates", url='https://t.me/iet_updates"),
+                        InlineKeyboardButton('♣️ Updates', url='https://t.me/iet_updates'),
                         InlineKeyboardButton("👩‍💻 Dev", url="https://t.me/iet_owner")
                     ],
                     [
