@@ -47,9 +47,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>Join @MM_All_Backup Here is The Result Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>Join @MM_All_Backup Here is The Result Found In My Database For Your Query</b><code> {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>Join @MM_All_Backup Here is The Result Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>Join @MM_All_Backup Here is The Result Found In My Database For Your Query</b><code> {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -65,9 +65,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>Join @MM_All_Backup Here is The Result Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>Join @MM_All_Backup Here is The Result Found In My Database For Your Query</b><code> {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b> Join @MM_All_Backup Here is The Result Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b> Join @MM_All_Backup Here is The Result Found In My Database For Your Query</b><code> {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
@@ -213,7 +213,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+                await query.answer("I Like Your Smartness, But Don't Be Oversmart. Join ചെയ്യാൻ പറഞ്ഞാൽ അത് ചെയ്യ്..😒",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
