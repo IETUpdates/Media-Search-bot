@@ -65,9 +65,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>Query:</b> <code>{search}</code> \n‌‌‌‌\n‌‌‌<u>IMDb Data:</u>\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a>/ 10\n\n <i>📀 JOIN @MM_NewOTTUpdatesS</i>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>Query:</b> <code>{search}</code> \n‌‌‌‌\n‌‌‌<u>IMDb Data:</u>\n🏷 Title: <a href={imdb_id['url']}>{imdb_id.get('title')}</a>\n🎭 Genres: {imdb_id.get('genres')}\n📆 Year: <a href={imdb_id['url']}/releaseinfo>{imdb_id.get('year')}</a>\n🌟 Rating: <a href={imdb_id['url']}/ratings>{imdb_id.get('rating')}</a>/ 10\n\n <i>📀 JOIN @MM_NewOTTUpdatesS</i>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>Query:</b> <code>{search}</code> \n‌‌‌‌\n‌‌‌<u>IMDb Data:</u>\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a>/ 10\n\n <i>📀 JOIN @MM_NewOTTUpdatesS</i>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>Query:</b> <code>{search}</code> \n‌‌‌‌\n‌‌‌<u>IMDb Data:</u>\n🏷 Title: <a href={imdb_id['url']}>{imdb_id.get('title')}</a>\n🎭 Genres: {imdb_id.get('genres')}\n📆 Year: <a href={imdb_id['url']}/releaseinfo>{imdb_id.get('year')}</a>\n🌟 Rating: <a href={imdb_id['url']}/ratings>{imdb_id.get('rating')}</a>/ 10\n\n <i>📀 JOIN @MM_NewOTTUpdatesS</i>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
