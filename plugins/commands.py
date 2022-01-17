@@ -66,7 +66,7 @@ async def start(bot, cmd):
                     f_caption = f"@MM_MOVIESS {files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♣️ Updates', url='https://t.me/iet_updates'),
+                        InlineKeyboardButton('📍Search again', switch_inline_query_current_chat=''),
                         InlineKeyboardButton('👩‍💻 Dev', url='https://t.me/iet_owner')
                     ]
                     ]
@@ -99,7 +99,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('♣️ Updates', url='https://t.me/iet_updates'),
+                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("👩‍💻 Dev", url="https://t.me/iet_owner")
                     ],
                     [
